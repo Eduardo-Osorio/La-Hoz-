@@ -1,0 +1,230 @@
+/*-------------------------------------------------------------------------------
+360×640 (móvil pequeño): 22,64%.
+1366×768 (ordenador portátil medio): 11,98%.
+1920×1080 (escritorio grande): 7,35%.
+375×667 (móvil medio): 5%.
+1440×900 (escritorio medio): 3,17%.
+720×1280 (móvil grande): 2,74%.
+*/
+
+/*
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:900&display=swap');
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Serif Pro', serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(54, 57, 63);
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1919px) {
+    header {
+        width: 100%;
+        position: sticky;
+        top:  0;
+        left: 0;
+        background: #ffff;
+        display: flex;
+    }
+    .container_menu {
+        width: 100%; 
+        height: 70px;
+        background: #ffffff;
+        padding: 0px 10px;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+    }
+    .logo_superior {
+        height: 70px;
+        align-items: center;
+        display: flex;
+    }
+    .oz_superior {
+        height: 70%;
+        padding-right: 20px;
+    }
+    .lahoz_superior {
+        height: 100%;
+    }
+    .menu {
+        height: 100%;
+        margin-right: 10px;
+    }
+    nav {
+        height: 100%;
+    }
+    nav > ul {
+        height: 100%;
+        display: flex;
+    }
+    nav ul li {
+        height: 100%;
+        list-style: none;
+        position: relative;
+        margin-right: 2px;
+        margin-left: 2px;
+    }
+    
+    nav > ul > li:first-child > a{
+        background-image: url(./media/iconos/oz.png);
+        background-size: 40px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding: 20px 40px;
+        filter: invert(1);
+    }
+    
+    nav > ul > li:first-child:hover > a{
+        background-image: url(./media/iconos/oz2.png);
+        background-size: 24px;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    
+    nav > ul > li > a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 14px;
+        color: rgb(5, 0, 0);
+        text-transform: uppercase;
+        font-size: 14px;
+        transition: all 300ms ease;
+    }
+    
+    nav > ul > li > a:hover {
+        transform: scale(1.1);
+        background: #a70000;
+        color: #ffff;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    }
+    
+    #selected {
+        transform: scale(1.1);
+        background-color: #58FFFF;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    /*SUBMENU*/
+    
+    nav ul li ul {
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        background: #ffff;
+        position: absolute;
+        top: 90px;
+        left: -5px; 
+        padding: 14px 0px;
+        visibility: hidden;
+        opacity: 0;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5)
+        z-index 10;
+        transition: all 300ms ease;
+    }
+    
+    nav ul li:hover ul{
+        visibility: visible;
+        opacity: 1;
+        top: 70px;
+    
+    }
+    
+    nav ul li ul::before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-bottom: 12px solid white;
+        position: absolute;
+        top: -12px;
+        left: 20px;
+    }
+    
+    nav ul li ul li a {
+        display: block;
+        color: #00AAAA;
+        padding: 6px;
+        padding-left: 14px;
+        margin-top: 10px;
+        font-size: 14px;
+        text-transform: uppercase;
+        transition: all 300ms ease;
+    }
+    
+    nav ul li ul li a:hover {
+        background: #002a2a;
+        color: #ffff;
+        transform: scale(1.1);
+        padding-left: 30px;
+        font-size: 14px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    }
+    .banner {
+        height: 225px;
+        width: 100%;
+        background-image: url(./media/images/book.jpg);
+        background-size: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .banner_content {
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+    }
+    .banner_content img {
+        width: 10%px;
+        height: 10px;
+        margin-top: 10px;
+    }
+    .banner_text {
+        margin: 10px;
+        text-align: center;
+        font-family: 'Times New Roman', serif;
+        font-size: 50px;
+        color: #ffff;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+    .banner_alegoría {
+        margin: 5px;
+        text-align: center;
+        font-family: 'Cinzel', serif;
+        font-size: 20px;
+        color: #ffff;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+    .banner_slogan {
+        margin: 10px;
+        text-align: center;
+        font-family: 'Cinzel', serif;
+        font-size: 15px;
+        color: #ffff;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+    .contenido {
+        width:100%;
+        height: 300px;
+        background-color: #ffff;
+        display: flex;
+    }
+    .opciones_inicio {
+        height: 100%;
+        width: 20%;
+    }
+    .numeros {
+        height: 100%;
+        width: 80%;
+    }
+}
