@@ -25,6 +25,45 @@ body {
     background-color: rgb(54, 57, 63);
 }
 
+@media screen and (min-width: 320px) and (max-width: 425px) {
+    .container_menu, .banner, .contenido{
+        display: none;
+    }
+
+    header{ 
+        width: 100%;
+        position: sticky;
+        background: #ffffff;
+        display: flex;
+    }
+
+    .container_menu_movil{
+        width: 100%;
+        height: 70px;
+        padding: 0px 10px;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo_superior_movil{
+        height: 100%;
+        align-items: center;
+        display: flex;
+    }
+
+    .oz_superior_movil{
+        height: 70%;
+    }
+    .lahoz_superior_movil{
+        height: 100%;
+    }
+
+    footer{
+        display: none;
+    }
+}
+
 @media screen and (min-width: 1366px) and (max-width: 1919px) {
     header {
         width: 100%;
@@ -222,14 +261,15 @@ body {
     }
     .opciones_inicio {
         height: 100%;
-        width: 25%;
+        width: 20%;
     }
     .numeros {
         display: flex;
         align-items: center;
         justify-content: space-around;
         height: 100%;
-        width: 75%;
+        width: 80%;
+        padding-left: 10px;
     }
     .portadas {
         display: flex;
@@ -290,12 +330,13 @@ body {
 
     .contacto {
         display: flex;
-        justify-content: center;
+        justify-content: left;
         align-items: center;
-        width: 85%;
+        width: 90%;
         height: 35px;
         box-shadow: 0px 0px 3px 0px rgba(51, 51, 51, 0.5);
         border-radius: 5px;
+        padding-left: 10px;
     }
 
     .contacto p {
@@ -308,5 +349,92 @@ body {
         height: 25px;
         margin-right: 10px;
         margin-left: 10px;
+    }
+
+    .footer {
+        padding: 15px;
+        width: 100%;
+        height: 140px;
+        background-color: #181818;
+    }
+
+    .contenido_footer{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .derechos{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 30%;
+    }
+
+    .derechos_slogan{
+        display: flex;
+        align-items: center;
+    }
+
+    .derechos_slogan img {
+        width: 80px;
+        object-fit: cover;
+        filter: invert(1);
+        margin-right: 10px;
+    }
+    
+    .derechos_slogan p{
+        color: #ffffff;
+        font-size: 14px;
+        margin-left: 5px;
+    }
+
+    .coppyright p{
+        color: #ffcf75;
+        font-size: 13px;
+    }
+
+    .coppyright {
+        margin-left: 15px;
+        margin-top: 20px;
+    }
+
+    .cargo_footer{
+        color: #ffcf75;
+        font-size: 14px;
+    }
+
+    .directores{
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .directores_nombres{
+        color: white;
+        font-size: 13px;
+        margin-top: 3px;
+    }
+
+    .sub_cargo_footer{
+        color: #ffcf75;
+        font-size: 13px;
+        margin-top: 3px;
+    }
+
+    .close_footer{
+        width: 100%;
+        height: 20px;
+        color: #ffcf75;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .quetzal img{
+        width: 100px;
+        filter: invert(1);
     }
 }
