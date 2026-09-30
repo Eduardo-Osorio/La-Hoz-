@@ -147,21 +147,27 @@ body {
 
     .container_contactos_movil{
         width: 100%;
-        padding-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 12px;
+        background: white;
     }
 
     .contactos_superior_movil{
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
+        width: 48%;
     }
 
     .contactos_superior_movil a{
-        height: 28px;
+        height: 30px;
         border-radius: 10px;
         display: flex;
         border: 1px solid #caac59;
         align-items: center;
         padding: 0 10px;
+        margin: 5px 0px;
     }
 
     .contactos_superior_movil img{
@@ -170,9 +176,9 @@ body {
     }
 
     .contactos_superior_movil p{
-        font-size: 16px;
+        font-size: 15px;
         color: #000000;
-        padding-left: 4px;
+        padding-left: 5px;
     }
 
     footer{
