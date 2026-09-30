@@ -108,6 +108,73 @@ body {
         color: #000000;
     } 
 
+    main{
+        margin-top: 30px;
+    }
+
+    .container_banner_movil{
+        width: 100%;
+        padding: 5px 12px;
+        background: white;
+        height: 180px;
+    }
+
+    .banner_movil{
+        background-image: url(media/images/book.jpg);
+        border-radius: 15px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 20px;
+    }
+
+    .banner_text_movil{
+        font-size: 35px;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .banner_alegoria_movil{
+        font-size: 20px;
+        color: white;
+    }
+
+    .banner_movil img{
+        width: 70%;
+        height: 8px;
+    }
+
+    .container_contactos_movil{
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .contactos_superior_movil{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contactos_superior_movil a{
+        height: 28px;
+        border-radius: 10px;
+        display: flex;
+        border: 1px solid #caac59;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .contactos_superior_movil img{
+        height: 80%;
+        margin: 2px;
+    }
+
+    .contactos_superior_movil p{
+        font-size: 16px;
+        color: #000000;
+        padding-left: 4px;
+    }
+
     footer{
         display: none;
     }
